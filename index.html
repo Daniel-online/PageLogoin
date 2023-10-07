@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="Login">
+    <title>XPT8</title>
+    <script type="!text/javascript">
+        function msgi(){
+            alert("Preencha os campos obrigatórios");
+          
+            function validarCampos(){
+                let Login = document.getElementByID("Login").value;
+                let Pwd = document.getElementByID("Pwd").value;
+                
+                if(Login== ""|| Pwd=""){
+                    alert("Campo Login/Senha inválidos!");
+                    return false;
+                }
+                return true;
+           
+            }
+            function trocaImagem(n){
+                let img = documen.getElementByID("imagem");
+                if (n == 0){
+                    img.src="imagem1.jpg"
+                } else{
+                    img.src="imagem2.jpg"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-page">
+     <div class="form">
+        <img src="qq.jpg" style="width: 50px;" id="imagem"   onmouseover="troca(1)" on onmouseout=""   
+        <form action="" class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
